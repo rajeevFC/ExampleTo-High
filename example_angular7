@@ -1,0 +1,32 @@
+Question: Write a code /Example to explain Interpolation. & backtick.
+Answer:
+
+import { Component } from "@angular/core";
+import { uptime } from "os";
+
+@Component({
+  selector: "app-root",
+  template: `hello <br>{{title}}
+  <div>Mango Price :{{mangoPrice}} Rs.</div>
+  <div>Banana Price:{{bananaPrice}} Rs.</div>
+  <div>Total Bill Amount:{{mangoPrice + bananaPrice}}</div>
+  --------------------------------------------
+  <br>State detail:
+  State name:{{comany.name}}<br>
+  Total district: {{comany.district}}<br>
+  Capital: {{comany.capital}}
+  `,
+  styleUrls: ["./app.component.css"]
+})
+export class AppComponent {
+  title = "CodeSandbox";
+  mangoPrice =100;
+  bananaPrice = 40;
+
+comany={
+  "name":"UP",
+  "district":74,
+  "capital": "Lucknow"
+};
+
+}
